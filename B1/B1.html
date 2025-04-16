@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Zing MP3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #181818;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .sidebar h2 {
+            color: #ff4da6;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px 0;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .music-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .music-card {
+            background-color: #242424;
+            padding: 15px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .music-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .music-card:hover {
+            transform: scale(1.05);
+        }
+        .container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgb(0, 0, 0);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-user:hover {
+  color: #eee;
+}
+.music-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgb(27, 24, 24);
+}
+
+.music-container:hover .overlay {
+  opacity: 0.8;
+}
+
+.icon {
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.fa-user:hover {
+  color: #eee;
+}
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <h2>Gợi Ý Cho Bạn</h2 >
+          
+        <div class="music-section">
+            <div class="music-card">
+                <div class="music-container">
+                    <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/covers/9/e/9e0f8784ffebf6865c83c5e526274f31_1465465806.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                    <a href="#" class="icon">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 15px; margin-right: 20px;"></i>
+                            <i class="fa fa-play" aria-hidden="true" style="font-size: 40px; margin-right: 20px;"></i>
+                            <i class="fa fa-share" aria-hidden="true" style="font-size: 20px"></i>
+                        </div>
+                    </a>
+                    </div>
+                  </div>
+                  <p>Cho Tôi Đi Theo</p>
+            </div>
+            <div class="music-card">
+                <div class="music-container">
+                    <img src="https://photo-resize-zmp3.zmdcdn.me/w600_r1x1_jpeg/cover/f/e/2/f/fe2f84a879365ff12eb0d64bf0741efd.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                    <a href="#" class="icon">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 20px; margin-right: 20px;"></i>
+                            <i class="fa fa-play" aria-hidden="true" style="font-size: 40px; margin-right: 20px;"></i>
+                            <i class="fa fa-share" aria-hidden="true" style="font-size: 20px"></i>
+                        </div>
+                    </a>
+                    </div>
+                  </div>
+                  <p>Mất Kết Nối
+                  </p>
+            </div>
+            <div class="music-card">
+                <div class="music-container">
+                    <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/0/0/c/3/00c392df07aac7f6a8d65a3451fbc632.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                    <a href="#" class="icon">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 15px; margin-right: 20px;"></i>
+                            <i class="fa fa-play" aria-hidden="true" style="font-size: 40px; margin-right: 20px;"></i>
+                            <i class="fa fa-share" aria-hidden="true" style="font-size: 20px"></i>
+                        </div>
+                    </a>
+                    </div>
+                  </div>
+                <p>Đặt Trái Tim Lên Bàn</p>
+            </div>
+            <div class="music-card">
+                <div class="music-container">
+                    <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/c/1/e/0/c1e0e81a248334ba5ed6d939ec167108.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                    <a href="#" class="icon">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <i class="fa fa-heart-o" aria-hidden="true" style="font-size: 15px; margin-right: 20px;"></i>
+                            <i class="fa fa-play" aria-hidden="true" style="font-size: 40px; margin-right: 20px;"></i>
+                            <i class="fa fa-share" aria-hidden="true" style="font-size: 20px"></i>
+                        </div>
+                    </a>
+                    </div>
+                  </div>
+                <p>Em Khong The</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
